@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Button?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Main">
+   <children>
+      <ImageView fitHeight="74.0" fitWidth="95.0" layoutX="150.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@delivery.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nameText" alignment="CENTER" layoutX="113.0" layoutY="114.0" promptText="Name" />
+      <TextField fx:id="surnameText" alignment="CENTER" layoutX="114.0" layoutY="156.0" promptText="Surname" />
+      <TextField fx:id="phoneNrText" alignment="CENTER" layoutX="113.0" layoutY="198.0" promptText="Phone Number" />
+      <TextField fx:id="emailRegisterText" alignment="CENTER" layoutX="114.0" layoutY="242.0" promptText="Email" />
+      <TextField fx:id="cardNrText" alignment="CENTER" layoutX="113.0" layoutY="288.0" promptText="Card Number" />
+      <Label layoutX="40.0" layoutY="181.0" />
+      <Label layoutX="57.0" layoutY="254.0" />
+      <Label layoutX="14.0" layoutY="326.0" />
+      <Button fx:id="registerButton" layoutX="157.0" layoutY="415.0" mnemonicParsing="false" onAction="#testRegisterButton" text="Register" textFill="#800ee4" />
+      <PasswordField fx:id="passwordRegisterText" alignment="CENTER" layoutX="113.0" layoutY="331.0" promptText="Password" />
+      <Button fx:id="goBackRegisterButton" layoutX="175.0" layoutY="447.0" mnemonicParsing="false" onAction="#goBack" text="&lt;" textFill="#800ee4" />
+      <Label fx:id="nameError" alignment="CENTER" layoutX="113.0" layoutY="139.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+      <Label fx:id="surnameError" alignment="CENTER" layoutX="113.0" layoutY="181.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+      <Label fx:id="phoneNrError" alignment="CENTER" layoutX="113.0" layoutY="223.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+      <Label fx:id="emailRegisterError" alignment="CENTER" layoutX="113.0" layoutY="271.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+      <Label fx:id="cardNrError" alignment="CENTER" layoutX="113.0" layoutY="313.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+      <Label fx:id="passRegisterError" alignment="CENTER" layoutX="113.0" layoutY="356.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+      <PasswordField fx:id="confirmPasswordRegisterText" alignment="CENTER" layoutX="113.0" layoutY="373.0" promptText="Confirm Password" />
+      <Label fx:id="confirmPassRegisterError" alignment="CENTER" layoutX="113.0" layoutY="398.0" prefHeight="17.0" prefWidth="149.0" textFill="RED" />
+   </children>
+</AnchorPane>
